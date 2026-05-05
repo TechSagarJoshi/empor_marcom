@@ -1,0 +1,216 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Empor Marcom | Get in Touch — Delhi, India{% endblock %}
+{% block meta_desc %}Contact Empor Marcom for a free B2B marketing strategy consultation. Reach our Delhi team via email, phone, or our contact form.{% endblock %}
+
+{% block content %}
+
+<!-- ══════════════════════════════════
+     CONTACT HERO
+     ══════════════════════════════════ -->
+<section class="contact-hero" style="position:relative; overflow:hidden;">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 60%, rgba(78,205,196,0.07) 0%, transparent 60%);"></div>
+  <div class="container">
+    <div class="fade-in">
+      <span class="section-label">Contact Us</span>
+      <h1 class="section-title" style="font-size:clamp(2.4rem,5vw,4rem); margin: 0 auto 1.2rem;">
+        Let's Start a<br>
+        <span style="background:linear-gradient(135deg,var(--accent),var(--electric));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Conversation</span>
+      </h1>
+      <p class="section-sub" style="margin: 0 auto; text-align:center;">
+        Whether you're ready to launch a campaign or just exploring your options — we're here to help. Expect a response within 4 business hours.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     CONTACT LAYOUT
+     ══════════════════════════════════ -->
+<section style="padding-top:2rem;">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- Left: Info -->
+      <div class="fade-in-left">
+        <div class="contact-info-card">
+          <div class="contact-icon">📧</div>
+          <div class="contact-info-text">
+            <h4>Email Us</h4>
+            <a href="mailto:hello@empor.in">hello@empor.in</a><br>
+            <a href="mailto:careers@empor.in" style="margin-top:0.2rem;display:block;">careers@empor.in</a>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-icon">📞</div>
+          <div class="contact-info-text">
+            <h4>Call Us</h4>
+            <a href="tel:+911140000000">+91 11 4000 0000</a><br>
+            <p style="font-size:0.8rem; margin-top:0.2rem;">Mon–Fri, 9 AM – 6 PM IST</p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-icon">📍</div>
+          <div class="contact-info-text">
+            <h4>Our Office</h4>
+            <p>Empor Marcom Pvt. Ltd.<br>
+              Connaught Place,<br>
+              New Delhi – 110001, India
+            </p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-icon">💬</div>
+          <div class="contact-info-text">
+            <h4>Follow Us</h4>
+            <a href="https://www.linkedin.com/company/empor/" target="_blank" rel="noopener">LinkedIn — @empor</a><br>
+            <a href="https://www.instagram.com/empor_marcom/" target="_blank" rel="noopener" style="display:block;margin-top:0.2rem;">Instagram — @empor_marcom</a>
+          </div>
+        </div>
+
+        <!-- Map placeholder -->
+        <div class="map-placeholder">
+          <span style="font-size:2rem;">🗺️</span>
+          <span>Connaught Place, New Delhi</span>
+          <a href="https://maps.google.com/?q=Connaught+Place+New+Delhi" target="_blank" rel="noopener" style="color:var(--accent); font-size:0.82rem; font-weight:600; margin-top:0.3rem;">Open in Google Maps →</a>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-form-card fade-in-right">
+        <h3>Send Us a Message</h3>
+        <p class="sub">Tell us about your project and we'll get back to you within 4 hours.</p>
+
+        <div id="contact-form-wrap">
+          <form id="contact-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="cf-name">Your Name *</label>
+                <input type="text" id="cf-name" placeholder="Rahul Verma" required />
+              </div>
+              <div class="form-group">
+                <label for="cf-email">Work Email *</label>
+                <input type="email" id="cf-email" placeholder="rahul@company.com" required />
+              </div>
+              <div class="form-group">
+                <label for="cf-phone">Phone Number</label>
+                <input type="tel" id="cf-phone" placeholder="98XXXXXXXX" />
+              </div>
+              <div class="form-group">
+                <label for="cf-company">Company Name</label>
+                <input type="text" id="cf-company" placeholder="Your Company" />
+              </div>
+              <div class="form-group full">
+                <label for="cf-service">Service Interested In</label>
+                <select id="cf-service">
+                  <option value="" disabled selected>Select a service (optional)</option>
+                  <option>Lead Generation</option>
+                  <option>Webinars & Events</option>
+                  <option>Content Marketing</option>
+                  <option>Performance Marketing</option>
+                  <option>Multiple Services</option>
+                  <option>Not Sure — Need Advice</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label for="cf-budget">Monthly Budget Range</label>
+                <select id="cf-budget">
+                  <option value="" disabled selected>Select budget (optional)</option>
+                  <option>Below ₹1L/month</option>
+                  <option>₹1L – ₹3L/month</option>
+                  <option>₹3L – ₹7L/month</option>
+                  <option>₹7L – ₹15L/month</option>
+                  <option>₹15L+/month</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label for="cf-message">Your Message *</label>
+                <textarea id="cf-message" placeholder="Tell us about your marketing goals, current challenges, and what success looks like for you..." required style="min-height:140px;"></textarea>
+              </div>
+              <div class="form-group full">
+                <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; padding:1rem; font-size:1rem;">
+                  Send Message →
+                </button>
+                <p style="font-size:0.78rem; color:var(--text-muted); margin-top:0.8rem; text-align:center;">
+                  🔒 Your information is safe. We never share your details with third parties.
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Success state -->
+        <div class="form-success" id="form-success">
+          <div class="form-success-icon">🎉</div>
+          <h4>Message Sent!</h4>
+          <p>Thanks for reaching out. Our team will review your message and get back to you within 4 business hours.</p>
+          <a href="/" class="btn btn-primary" style="margin-top:1.5rem; display:inline-flex;">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     FAQ
+     ══════════════════════════════════ -->
+<section>
+  <div class="container">
+    <div class="fade-in" style="text-align:center; margin-bottom:3rem;">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title" style="font-size:clamp(1.8rem,3.5vw,2.6rem);">Frequently Asked Questions</h2>
+    </div>
+    <div style="max-width:760px; margin:0 auto; display:flex; flex-direction:column; gap:1rem;">
+      <div class="card fade-in" id="faq-1">
+        <div style="display:flex; justify-content:space-between; align-items:center; cursor:pointer;" onclick="toggleFaq('faq-1')">
+          <h4 style="font-family:var(--font-head); color:var(--white); font-size:1rem; font-weight:600;">How quickly can you get started?</h4>
+          <span style="color:var(--accent); font-size:1.2rem; transition:transform 0.3s;" class="faq-arrow">+</span>
+        </div>
+        <p class="faq-body" style="display:none; color:var(--text-muted); font-size:0.9rem; line-height:1.8; margin-top:1rem;">
+          Most clients are onboarded and live within 10–14 business days. We move fast because we know time-to-pipeline matters. Our team handles all the setup so you can focus on your business.
+        </p>
+      </div>
+      <div class="card fade-in stagger-1" id="faq-2">
+        <div style="display:flex; justify-content:space-between; align-items:center; cursor:pointer;" onclick="toggleFaq('faq-2')">
+          <h4 style="font-family:var(--font-head); color:var(--white); font-size:1rem; font-weight:600;">What's the minimum engagement?</h4>
+          <span style="color:var(--accent); font-size:1.2rem; transition:transform 0.3s;" class="faq-arrow">+</span>
+        </div>
+        <p class="faq-body" style="display:none; color:var(--text-muted); font-size:0.9rem; line-height:1.8; margin-top:1rem;">
+          We typically work on 3-month minimum engagements to give campaigns enough runway to optimise. However, project-based work (like a single webinar) is also available with no minimum commitment.
+        </p>
+      </div>
+      <div class="card fade-in stagger-2" id="faq-3">
+        <div style="display:flex; justify-content:space-between; align-items:center; cursor:pointer;" onclick="toggleFaq('faq-3')">
+          <h4 style="font-family:var(--font-head); color:var(--white); font-size:1rem; font-weight:600;">Do you work with startups or only enterprise clients?</h4>
+          <span style="color:var(--accent); font-size:1.2rem; transition:transform 0.3s;" class="faq-arrow">+</span>
+        </div>
+        <p class="faq-body" style="display:none; color:var(--text-muted); font-size:0.9rem; line-height:1.8; margin-top:1rem;">
+          Both! We work with fast-growing B2B startups and established enterprise brands. Our programs are designed to scale with your growth — from a Series A startup targeting 50 accounts to a global enterprise running pan-India campaigns.
+        </p>
+      </div>
+      <div class="card fade-in stagger-3" id="faq-4">
+        <div style="display:flex; justify-content:space-between; align-items:center; cursor:pointer;" onclick="toggleFaq('faq-4')">
+          <h4 style="font-family:var(--font-head); color:var(--white); font-size:1rem; font-weight:600;">How do you measure success?</h4>
+          <span style="color:var(--accent); font-size:1.2rem; transition:transform 0.3s;" class="faq-arrow">+</span>
+        </div>
+        <p class="faq-body" style="display:none; color:var(--text-muted); font-size:0.9rem; line-height:1.8; margin-top:1rem;">
+          We agree on KPIs before we start — pipeline generated, cost-per-lead, qualified opportunities, and revenue influenced. You get a live dashboard with full visibility, plus monthly performance review calls.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+function toggleFaq(id) {
+  const card = document.getElementById(id);
+  const body = card.querySelector('.faq-body');
+  const arrow = card.querySelector('.faq-arrow');
+  const isOpen = body.style.display === 'block';
+  body.style.display = isOpen ? 'none' : 'block';
+  arrow.textContent = isOpen ? '+' : '−';
+  arrow.style.transform = isOpen ? '' : 'rotate(45deg)';
+}
+</script>
+
+{% endblock %}

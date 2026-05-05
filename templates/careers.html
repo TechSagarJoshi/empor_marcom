@@ -1,0 +1,261 @@
+{% extends "base.html" %}
+
+{% block title %}Careers at Empor Marcom | Join Delhi's Top B2B Marketing Team{% endblock %}
+{% block meta_desc %}Explore career opportunities at Empor Marcom. Join a passionate B2B marketing team in Delhi and work on campaigns that drive real business growth.{% endblock %}
+
+{% block content %}
+
+<!-- ══════════════════════════════════
+     CAREERS HERO
+     ══════════════════════════════════ -->
+<section class="careers-hero" style="position:relative; overflow:hidden;">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 60%, rgba(108,99,255,0.08) 0%, transparent 60%);"></div>
+  <div class="container">
+    <div class="fade-in">
+      <span class="section-label">Careers</span>
+      <h1 class="section-title" style="font-size:clamp(2.4rem,5vw,4rem); margin: 0 auto 1.2rem;">
+        Build Your Career at<br>
+        <span style="background:linear-gradient(135deg,var(--accent),var(--electric));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">India's Top B2B Agency</span>
+      </h1>
+      <p class="section-sub" style="margin: 0 auto 2.5rem; text-align:center;">
+        We're building a team of brilliant, curious, and ambitious marketers who want to do the best work of their careers. Come grow with us.
+      </p>
+    </div>
+
+    <!-- Perks row -->
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1.5rem; margin-top:3rem;" class="fade-in">
+      <div style="display:flex;align-items:center;gap:0.6rem;background:var(--card-bg);border:1px solid var(--border);padding:0.7rem 1.2rem;border-radius:50px;font-size:0.88rem;color:var(--text-muted);">
+        <span>💰</span> Competitive Salaries
+      </div>
+      <div style="display:flex;align-items:center;gap:0.6rem;background:var(--card-bg);border:1px solid var(--border);padding:0.7rem 1.2rem;border-radius:50px;font-size:0.88rem;color:var(--text-muted);">
+        <span>🏠</span> Hybrid Work Policy
+      </div>
+      <div style="display:flex;align-items:center;gap:0.6rem;background:var(--card-bg);border:1px solid var(--border);padding:0.7rem 1.2rem;border-radius:50px;font-size:0.88rem;color:var(--text-muted);">
+        <span>📚</span> Learning Budget ₹50K/year
+      </div>
+      <div style="display:flex;align-items:center;gap:0.6rem;background:var(--card-bg);border:1px solid var(--border);padding:0.7rem 1.2rem;border-radius:50px;font-size:0.88rem;color:var(--text-muted);">
+        <span>🏥</span> Health Insurance
+      </div>
+      <div style="display:flex;align-items:center;gap:0.6rem;background:var(--card-bg);border:1px solid var(--border);padding:0.7rem 1.2rem;border-radius:50px;font-size:0.88rem;color:var(--text-muted);">
+        <span>🚀</span> Fast Career Growth
+      </div>
+      <div style="display:flex;align-items:center;gap:0.6rem;background:var(--card-bg);border:1px solid var(--border);padding:0.7rem 1.2rem;border-radius:50px;font-size:0.88rem;color:var(--text-muted);">
+        <span>🎉</span> Team Events & Offsites
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     OPEN POSITIONS
+     ══════════════════════════════════ -->
+<section>
+  <div class="container">
+    <div class="fade-in" style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:2rem; flex-wrap:wrap; gap:1rem;">
+      <div>
+        <span class="section-label">Open Roles</span>
+        <h2 class="section-title" style="margin:0.5rem 0 0; font-size:clamp(1.8rem,3.5vw,2.6rem);">Current Openings</h2>
+      </div>
+      <div style="display:flex; gap:0.5rem; flex-wrap:wrap;" id="job-filters">
+        <button class="qr-btn active" onclick="filterJobs('all', this)" style="padding:0.5rem 1.2rem;">All</button>
+        <button class="qr-btn" onclick="filterJobs('marketing', this)" style="padding:0.5rem 1.2rem;">Marketing</button>
+        <button class="qr-btn" onclick="filterJobs('content', this)" style="padding:0.5rem 1.2rem;">Content</button>
+        <button class="qr-btn" onclick="filterJobs('tech', this)" style="padding:0.5rem 1.2rem;">Tech</button>
+      </div>
+    </div>
+
+    <div class="jobs-grid" id="jobs-grid">
+
+      <div class="job-card fade-in stagger-1" data-category="marketing">
+        <span class="job-tag">📣 Performance Marketing</span>
+        <h3>Senior Performance Marketing Manager</h3>
+        <div class="job-meta">
+          <span>📍 Delhi / Hybrid</span>
+          <span>💼 Full-time</span>
+          <span>💰 ₹12–18 LPA</span>
+          <span>⏱ 4–7 years exp</span>
+        </div>
+        <p class="job-desc">Own B2B paid media campaigns across LinkedIn, Google, and programmatic channels. Drive qualified pipeline for a portfolio of enterprise tech clients with full-funnel accountability.</p>
+        <a href="#apply-form" class="job-apply" onclick="prefillRole('Senior Performance Marketing Manager')">Apply Now →</a>
+      </div>
+
+      <div class="job-card fade-in stagger-2" data-category="marketing">
+        <span class="job-tag">🎯 Lead Generation</span>
+        <h3>ABM & Demand Generation Specialist</h3>
+        <div class="job-meta">
+          <span>📍 Delhi / Hybrid</span>
+          <span>💼 Full-time</span>
+          <span>💰 ₹8–12 LPA</span>
+          <span>⏱ 2–5 years exp</span>
+        </div>
+        <p class="job-desc">Build and execute ABM programs for B2B technology clients. Work with intent data, CRM workflows, and multi-touch nurture sequences to deliver BANT-qualified leads.</p>
+        <a href="#apply-form" class="job-apply" onclick="prefillRole('ABM & Demand Generation Specialist')">Apply Now →</a>
+      </div>
+
+      <div class="job-card fade-in stagger-3" data-category="content">
+        <span class="job-tag">✍️ Content</span>
+        <h3>Senior B2B Content Strategist</h3>
+        <div class="job-meta">
+          <span>📍 Delhi / Remote</span>
+          <span>💼 Full-time</span>
+          <span>💰 ₹10–15 LPA</span>
+          <span>⏱ 3–6 years exp</span>
+        </div>
+        <p class="job-desc">Lead content strategy for 3–5 enterprise tech clients. Produce whitepapers, eBooks, case studies, and thought leadership content that drives real pipeline.</p>
+        <a href="#apply-form" class="job-apply" onclick="prefillRole('Senior B2B Content Strategist')">Apply Now →</a>
+      </div>
+
+      <div class="job-card fade-in stagger-4" data-category="marketing">
+        <span class="job-tag">🎙️ Events</span>
+        <h3>Webinar & Events Producer</h3>
+        <div class="job-meta">
+          <span>📍 Delhi</span>
+          <span>💼 Full-time</span>
+          <span>💰 ₹7–11 LPA</span>
+          <span>⏱ 2–4 years exp</span>
+        </div>
+        <p class="job-desc">Manage end-to-end production of virtual webinars and hybrid events for B2B technology brands. Coordinate speakers, manage platforms, and deliver flawless execution.</p>
+        <a href="#apply-form" class="job-apply" onclick="prefillRole('Webinar & Events Producer')">Apply Now →</a>
+      </div>
+
+      <div class="job-card fade-in stagger-1" data-category="content">
+        <span class="job-tag">✍️ Content</span>
+        <h3>Content Writer — B2B Tech</h3>
+        <div class="job-meta">
+          <span>📍 Delhi / Remote</span>
+          <span>💼 Full-time</span>
+          <span>💰 ₹5–8 LPA</span>
+          <span>⏱ 1–3 years exp</span>
+        </div>
+        <p class="job-desc">Write compelling B2B content for tech, SaaS, and enterprise brands — blogs, LinkedIn posts, email sequences, and more. Strong research and SEO skills required.</p>
+        <a href="#apply-form" class="job-apply" onclick="prefillRole('Content Writer — B2B Tech')">Apply Now →</a>
+      </div>
+
+      <div class="job-card fade-in stagger-2" data-category="tech">
+        <span class="job-tag">⚙️ Technology</span>
+        <h3>Marketing Automation Specialist</h3>
+        <div class="job-meta">
+          <span>📍 Delhi / Hybrid</span>
+          <span>💼 Full-time</span>
+          <span>💰 ₹9–14 LPA</span>
+          <span>⏱ 2–5 years exp</span>
+        </div>
+        <p class="job-desc">Build and optimise marketing automation workflows in HubSpot, Marketo, or Salesforce Pardot. Own lead scoring, nurture programs, and CRM integrations.</p>
+        <a href="#apply-form" class="job-apply" onclick="prefillRole('Marketing Automation Specialist')">Apply Now →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     APPLY FORM
+     ══════════════════════════════════ -->
+<section id="apply-form">
+  <div class="container">
+    <div class="resume-section fade-in">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:flex-start;">
+        <div>
+          <span class="section-label">Apply Now</span>
+          <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.2rem); margin-bottom:0.8rem;">Send Us Your<br>Application</h2>
+          <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.8; margin-bottom:1.5rem;">
+            Don't see the perfect role? Apply anyway — we're always looking for great people. Include a note about what kind of work excites you most.
+          </p>
+          <div style="display:flex; flex-direction:column; gap:0.8rem; font-size:0.88rem; color:var(--text-muted);">
+            <div style="display:flex;align-items:center;gap:0.6rem;"><span style="color:var(--electric);">✓</span> We review every application within 48 hours</div>
+            <div style="display:flex;align-items:center;gap:0.6rem;"><span style="color:var(--electric);">✓</span> 3-step process: Review → Interview → Offer</div>
+            <div style="display:flex;align-items:center;gap:0.6rem;"><span style="color:var(--electric);">✓</span> Typical time-to-offer: 2 weeks</div>
+          </div>
+        </div>
+
+        <form id="career-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="c-name">Full Name *</label>
+              <input type="text" id="c-name" placeholder="Ananya Sharma" required />
+            </div>
+            <div class="form-group">
+              <label for="c-email">Email Address *</label>
+              <input type="email" id="c-email" placeholder="ananya@gmail.com" required />
+            </div>
+            <div class="form-group">
+              <label for="c-phone">Phone Number *</label>
+              <input type="tel" id="c-phone" placeholder="98XXXXXXXX" required />
+            </div>
+            <div class="form-group">
+              <label for="c-role">Role Applying For *</label>
+              <select id="c-role" required>
+                <option value="" disabled selected>Select a role</option>
+                <option>Senior Performance Marketing Manager</option>
+                <option>ABM & Demand Generation Specialist</option>
+                <option>Senior B2B Content Strategist</option>
+                <option>Webinar & Events Producer</option>
+                <option>Content Writer — B2B Tech</option>
+                <option>Marketing Automation Specialist</option>
+                <option>Other / General Application</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="c-exp">Years of Experience *</label>
+              <select id="c-exp" required>
+                <option value="" disabled selected>Select</option>
+                <option>0–1 years (Fresher)</option>
+                <option>1–3 years</option>
+                <option>3–6 years</option>
+                <option>6–10 years</option>
+                <option>10+ years</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="c-linkedin">LinkedIn Profile URL</label>
+              <input type="url" id="c-linkedin" placeholder="linkedin.com/in/yourname" />
+            </div>
+            <div class="form-group full">
+              <label for="c-cover">Why Empor? (Cover Note) *</label>
+              <textarea id="c-cover" placeholder="Tell us what excites you about this role and why you'd be a great fit for Empor Marcom..." required></textarea>
+            </div>
+            <div class="form-group full">
+              <label>Upload Resume (PDF/DOC, max 5MB) *</label>
+              <div class="file-upload" id="drop-zone">
+                <input type="file" id="resume-file" accept=".pdf,.doc,.docx" />
+                <div class="file-upload-icon">📎</div>
+                <p><span>Click to upload</span> or drag and drop</p>
+                <p style="font-size:0.78rem; margin-top:0.3rem;">PDF, DOC, DOCX (max 5MB)</p>
+                <p id="file-name-display" style="color:var(--accent); font-size:0.85rem; margin-top:0.5rem; font-weight:600;"></p>
+              </div>
+            </div>
+            <div class="form-group full">
+              <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; padding:1rem;">
+                Submit Application →
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+// Job filter
+function filterJobs(cat, btn) {
+  document.querySelectorAll('#job-filters .qr-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.job-card').forEach(card => {
+    const show = cat === 'all' || card.dataset.category === cat;
+    card.style.display = show ? '' : 'none';
+  });
+}
+
+// Pre-fill role from job listing
+function prefillRole(role) {
+  const sel = document.getElementById('c-role');
+  if (sel) {
+    for (let opt of sel.options) {
+      if (opt.value === role) { sel.value = role; break; }
+    }
+  }
+}
+</script>
+
+{% endblock %}
