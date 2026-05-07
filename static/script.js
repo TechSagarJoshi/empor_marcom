@@ -52,18 +52,7 @@ function closeMobileMenu() {
   document.body.style.overflow = '';
 }
 
-// ── Dark / Light Mode Toggle ─────────────────────
-const darkToggle = document.querySelector('.dark-toggle');
-const stored = localStorage.getItem('theme');
-if (stored === 'light') document.body.classList.add('light-mode');
-
-darkToggle?.addEventListener('click', () => {
-  document.body.classList.toggle('light-mode');
-  const isLight = document.body.classList.contains('light-mode');
-  localStorage.setItem('theme', isLight ? 'light' : 'dark');
-  darkToggle.innerHTML = isLight ? '☀️' : '🌙';
-});
-if (stored === 'light' && darkToggle) darkToggle.innerHTML = '☀️';
+//
 
 // ── Scroll Fade-In Observer ──────────────────────
 const fadeEls = document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right');
